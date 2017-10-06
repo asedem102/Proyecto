@@ -1,0 +1,229 @@
+<?php
+	header("Content-type: text/css; charset: UTF-8");
+	include './../../php_para_html_y_css.php'
+?>
+
+/****************************** Body ****************************************/
+body {
+	background-color : gainsboro;
+}
+/***************************** /Body ****************************************/
+
+#id_mediaquery_estilos {
+	display: none;
+}
+
+#id_mediaquery_estilos_medio {
+	display: block;
+}
+
+#id_mediaquery_estilos_pequeno {
+	display: none;
+}
+
+
+/*					<img id="id_coche" src="imagenes/coche.gif">
+					<label id="id_num_veh_anun"><?=$numero_vehiculos_anunciados?> vehículos anunciados</label>
+*/
+/*************************** Contenidor *************************************/
+#id_div_contenidor {
+	z-index          :    1;
+	background-color :    white;
+	width            :  100%;
+/*	height           :  600px;*/
+	text-align       :    center;
+	margin-top       :   -8px;
+	box-shadow       :    0 4px  8px 0 rgba(0, 0, 0, 0.50), 
+	                      0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/************************** /Contenidor *************************************/
+
+
+
+
+/****************************** Header **************************************/
+
+#id_img_logo {
+	margin-left : 20px;
+	display     :  block;
+}
+
+/* enlace con logo */
+#id_a_logo {
+	display     :  block;	
+	/* Medidas exactas del logo */
+	width       : 215px;
+	height      : 100px;
+}
+
+#id_nav_1 {
+	/*float       :  left;*/
+	margin-left : 20px;
+}
+
+nav {
+	display    :   block;
+	height     :  50px;
+	background :   #ff9c07; /* Navegadores que no soportan gradientes */
+    background :   -webkit-linear-gradient(#ffefef, #ff9c07); /* Safari  5.1 a  6.0 */
+    background :   -o-linear-gradient(     #ffefef, #ff9c07); /* Opera  11.1 a 12.0 */
+    background :   -moz-linear-gradient(   #ffefef, #ff9c07); /* Firefox 3.6 a 15   */
+    background :   linear-gradient(        #ffefef, #ff9c07); /* Sintaxis estándar   */
+}
+
+nav a, 
+label .class_separador_nav {
+	color       : black;
+	font-family : Arial, Helvetica, sans-serif;
+	font-size   : medium;
+	font-weight : bold; 
+	font-style  : normal;
+}
+
+.class_separador_nav {
+}
+
+nav a:link    { text-decoration:none; }
+nav a:visited { text-decoration:none; }
+nav a:active  { text-decoration:none; }
+nav a:hover   { text-decoration:underline; }
+
+#id_nav_2 {
+	display: block;
+}
+
+#id_coche { /* miniatura */
+	margin-left: 25px;
+	/*float: left;*/
+}
+
+#id_num_veh_anun {
+	margin-left: 25px;
+	/*float: left;*/
+}
+
+#id_nav_fecha {
+	/*float        :  left;*/
+	margin-right : 20px;
+}
+
+#id_div_ventana{
+	background-color :    white;
+	z-index          :    2;
+	display          :    inline-block;
+	position         :    fixed;
+	left             :    0;
+	right            :    0;
+    margin-right 	 :    auto;
+    margin-left 	 :    auto;
+	width            :   80%;
+	height           :  <?=$altura?>;
+	top              : -<?=$altura?>;
+	transition       :    top 1s;
+	box-shadow       :    0 4px  8px 0 rgba(0, 0, 0, 0.50), 
+	                      0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/***************************** /Header **************************************/
+
+
+
+
+/***************************** Section **************************************/
+/***************************** Búsquedas marca y coche **********************/
+#id_buscar_marca {
+	border           :   1px solid gainsboro;
+	width            :  38%;
+	height           : 300px;
+	display          :   inline-block;
+	vertical-align   :   top;
+	margin-top       :  15px;
+}
+
+#id_buscar_tipo_coche {
+	border           :   1px solid gainsboro;
+	width            :  38%;
+	height           : 300px;
+	display          :   inline-block;
+	vertical-align   :   top;
+	margin-top       :  15px;
+}
+
+.class_cuadro_gris {
+	background-color :   gainsboro;
+	height           :  30px;
+	border           :   1px solid gainsboro;
+	padding-top      :   5px;
+	margin           :   2px 2px 2px 2px;
+}
+
+.class_contenedor_label_input {
+	text-align: left;
+	margin-top: 3px;
+}
+
+.class_contenedor_label_input_oculto{
+	visibility: hidden;
+}
+
+.class_label_form_izq {
+	display: inline-block;
+	width: 35%; 
+	margin-left: 5px;
+}
+
+.class_input_form_izq {
+	display: inline-block;
+	width: 60%; 
+}
+
+/**************************** /Búsquedas marca y coche **********************/
+
+.class_barra_naranja_oscuro {
+	height: 30px;
+	background-color: orange;
+}
+
+.class_barra_separador {
+	height: 5px;
+	background-color: green;
+}
+
+.class_barra_naranja_claro {
+	height: 30px;
+	background-color: yellow;
+
+
+/***************************** Destacados ***********************************/
+/**************************** /Destacados ***********************************/
+
+
+
+
+
+/***************************** Sólo coches en venta, últimos 30 anuncios ****/
+/**************************** /Sólo coches en venta, últimos 30 anuncios ****/
+
+
+
+
+
+/***************************** Listado de marcas ****************************/
+/**************************** /Listado de marcas ****************************/
+/**************************** /Section **************************************/
+
+
+
+
+
+/***************************** Footer ***************************************/
+
+/**************************** /Footer ***************************************/
+
+
+
+
+/***************************** Aside ****************************************/
+aside {
+	float: right;
+}
+/***************************** /Aside ***************************************/
